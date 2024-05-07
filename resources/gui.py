@@ -91,7 +91,7 @@ class DataProcessingGUI:
         }
         self.process_data_callback("process_data", self.data)
         self.show_result("Data processed successfully")
-        self.window.destroy()
+        self.window.quit()
 
     def update_labels(self, sampling_rate, recording_length):
         self.sampling_rate_label.config(text=f"Original Sampling Rate: {sampling_rate}")
